@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="AR2-D2: Training a Robot Without a Robot">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AR2-D2</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV4ZJ9PVSV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FV4ZJ9PVSV');
+  </script>
+
+  <script>
+    
+
+   
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body onload="updateSingleVideo(); updateQpredVideo();">
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">AR2-D2: <br> Training a Robot Without a Robot</h1>
+          <h3 class="title is-4 conference-authors">Anonymous Submission </a></h3>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero teaser">
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <video id="teaser" autoplay muted loop height="100%">
+            <source src="media/intro/v1.mp4"
+                    type="video/mp4">
+          </video>
+          </br>
+        </div>
+        <br>
+        <h2 class="subtitle has-text-centered">
+        <span class="dperact">AR2-D2</span> is a <b>robot demonstrations framework</b> in the form of an iOS app that people can use to project an AR robot into the physical world and record a video of
+                themselves manipulating any object whilst simultaneously capturing the essential
+                data modalities for training <b>a real robot</b> 
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay muted loop height="100%">
+            <source src="media/intro/v2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay muted loop height="100%">
+            <source src="media/intro/v9.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+         <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay muted loop height="100%">
+            <source src="media/intro/v6.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay muted loop height="100%">
+            <source src="media/intro/a3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay muted loop height="100%">
+            <source src="media/intro/a2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay muted loop height="100%">
+            <source src="media/intro/v5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay muted loop height="100%">
+            <source src="media/intro/a1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+       <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay muted loop height="100%">
+            <source src="media/intro/a4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+         <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay muted loop height="100%">
+            <source src="media/intro/a5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h2 class="subtitle has-text-centered">
+</br>
+  We use <b>AR2-D2</b> to collect robot demonstrations cross three manipulation tasks (<em>press</em>, <em>pick-up</em> and <em>push</em>) on <b>9</b> personalized objects. </br>These personalized objects are uniquely <b>shaped, sized, or textured items designed to meet the specific needs or functionalities</b> of individual users within their personalized environments.
+</h2>
+<br>
+
+
+
+<section class="hero teaser">
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <video id="teaser" autoplay muted loop height="100%">
+            <source src="media/intro/ARDemo.mp4"
+                    type="video/mp4">
+          </video>
+          </br>
+        </div>
+        <br>
+        <h2 class="subtitle has-text-centered">
+        <span class="dperact">AR2-D2's</span> demonstrations collection interface via an iPhone/iPad. 
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+                             
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diligently gathered human demonstrations serve as the unsung heroes empowering the progression of robot learning.
+            Today, demonstrations are collected by training people to use specialized controllers, which (tele-)operate robots to manipulate a small number of objects.
+          </p>
+          <p>
+            By contrast, we introduce AR2-D2: a system for collecting demonstrations which (1) does not require people with specialized training, (2) does not require any real robots during data collection, and therefore, (3) enables manipulation of diverse objects with a real robot.
+            AR2-D2 is a framework in the form of an iOS app that people can use to record a video of themselves manipulating any object whilst simultaneously capturing the essential data modalities for training a real robot. We show that data collected via our system  enables the training of behavior cloning agents in manipulating real objects.
+            Our experiments further show that training with our AR data is as effective as training with real-world robot demonstrations.
+          </p>
+          <p>
+            Moreover, our user study indicates that users find AR2-D2 intuitive to use and require no training in contrast to four other frequently employed methods for collecting robot demonstrations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+   
+    <!--/ Abstract. -->
+
+  </div>
+
+
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+
+
+    <!-- Animation. -->
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-3"><span class="dperact">AR2-D2</span></h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">A novel system for scaling up robot demonstration collection</h3>
+        <div class="content has-text-justified">
+        <!-- <br> -->
+        </div>
+        <p>
+        We designed <b>AR2-D2</b> as an iOS application, which can be run on an iPhone or iPad. Since modern mobile devices and tablets come equipped with in-built LiDAR, we can effectively place AR robots into the real world.
+        The phone application is developed atop the Unity Engine and the AR Foundation kit. The application receives camera sensor data, including camera intrinsic and extrinsic values, and depth directly from the mobile device's built-in functionality. The AR Foundation kit enables the projection of the Franka Panda robot arm's URDF into the physical space. To determine user's 2D hand pose, we utilize Apple's human pose detection algorithm. This, together with the depth map is used to reconstruct the 3D pose of the human hand. By continuously tracking the hand pose at a rate of 30 frames per second, we can mimic the pose with the AR robot's end-effector.        </p>
+        </br>
+        </br>
+        <img src="media/figures/figure2_1.png" class="interpolation-image" 
+         alt="Interpolate start reference image." />
+        </br>
+        </br>
+          <p>
+              Given language instructions describing a task (e.g.~``Pick up the plastic bowl''), we hire users to generate demonstrations using <b>AR2-D2</b>. From the user-generated demonstration video, we generate training data that can be used to train and deploy on a real robot. 
+              To create useful training data, we convert this video into one where it looks like an AR robot manipulated the object. To do so, we segment out and eliminate the human hand using Segment-Anything. We fill in the gap left behind by the missing hand with a video in-painting technique known as E2FGVI.
+              Finally, we produce a video with the AR robot arm moving to the key-points identified by the user's hand. This final video processed video makes it appear as if an AR robot arm manipulated the real-world object; it can used as training data for visual-based imitation learning.
+              Additionally, since we have access to the scene's depth estimation, we can also generate a 3D voxelized representation of the scene and use it to train agents like Perceiver-Actor.           </p>
+<!
+        <br/>
+        <br/>
+
+        <!--/ Re-rendering. -->
+
+        <h2 class="title is-3">Results</h2>
+    
+        <div class="content has-text-justified">
+        <!-- <br> -->
+        </div>
+        <p>
+          We conducted a user-study with <b>(N=10)</b> subjects and found out that AR2-D2 are significantly faster than 4 other conventional interfaces of collecting robot demonstrations for both in simulation and real-world. 
+        </br>
+        <img src="media/figures/figure4.png" class="interpolation-image" 
+         alt="Interpolate start reference image." />
+        </br>
+        </br>
+          <p>
+            We also compared the data collected by AR2-D2 with a few other baseline approaches, and found that demonstrations collected via AR2-D2 yields useful representation for training a real-robot and also demonstrations collected via AR2-D2 train policies as accurately as demonstrations collect from a real robot.
+          </br>
+          <img src="media/figures/Screen Shot 2023-06-07 at 11.06.07 PM.png" class="interpolation-image" 
+           alt="Interpolate start reference image." />
+          </br> 
+            
+          
+        <br/>
+        <br/>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+      <h2 class="title is-3">Ablation Studies</h2>
+
+      <h3 class="title is-4">Demonstrations vs Iterations for fine-tuning</h3>
+      <p>We perform a diagnostic analyze on the number of demonstrations and iterations require to ground the pre-trained AR data to the real robot deployment environment. We found that <b>5 Demos</b> and <b>3,000 Iterations</b> (equivalent to 10 minutes of training) yields the optimal result.</p>
+      <br/>
+      <h3 class="title is-4" style="margin-bottom: 10px;">2D data vs 3D data for training</h3>
+      <p><b>AR2-D2</b> demonstrations store 2D image and 3D depth data, facilitating training of image-based behavior cloning (Image-BC) and 3D voxelized methods. With fixed camera calibration offset and no fine-tuning during training, 3D-input agents outperform 2D counterparts. We evaluated their performance on three tasks.</p>
+      <br/>
+
+      <video id="tracking-objects"
+             muted
+             autoplay
+             loop
+             width="99%">
+        <source src="media/intro/v12.mp4" 
+                type="video/mp4">
+      </video>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            This website and github has been anonymized for submission.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
