@@ -268,10 +268,14 @@
         We designed <b>AR2-D2</b> as an iOS application, which can be run on an iPhone or iPad. Since modern mobile devices and tablets come equipped with in-built LiDAR, we can effectively place AR robots into the real world.
         The phone application is developed atop the Unity Engine and the AR Foundation kit. The application receives camera sensor data, including camera intrinsic and extrinsic values, and depth directly from the mobile device's built-in functionality. The AR Foundation kit enables the projection of the Franka Panda robot arm's URDF into the physical space. To determine user's 2D hand pose, we utilize Apple's human pose detection algorithm. This, together with the depth map is used to reconstruct the 3D pose of the human hand. By continuously tracking the hand pose at a rate of 30 frames per second, we can mimic the pose with the AR robot's end-effector.        </p>
         </br>
-        </br>
-        <img src="media/figures/figure2_1.png" class="interpolation-image" 
-         alt="Interpolate start reference image." />
-        </br>
+        <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <video id="teaser" autoplay muted loop height="100%">
+            <source src="media/figures/v100.mp4"
+                    type="video/mp4">
+          </video>
+          </br>
+        </div>
         </br>
           <p>
               Given language instructions describing a task (e.g.~``Pick up the plastic bowl''), we hire users to generate demonstrations using <b>AR2-D2</b>. From the user-generated demonstration video, we generate training data that can be used to train and deploy on a real robot. 
